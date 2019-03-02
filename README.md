@@ -1,8 +1,11 @@
-Description
+
 Method for NLP project
+by M1 Master TAL students
+Esteban Marquer
+Kelvin Han
+Elena Khasanova
 
 ## Files
-* `toy_corpus/`: **[Obsolete]** folder where the toy corpus data is located
   * `xml/`: folder where the XML version of the definitions are located
     * `carrot.xml`: XML of the definition of the noun "carrot", source is 
     [the article "carrot" of the McMillan Dictionary](https://www.macmillandictionary.com/dictionary/british/carrot)
@@ -86,5 +89,3 @@ To directly obtain results from a word database, just run `draw_heatmap.py`.
 ### Distance between unordered trees
 * [https://ieeexplore.ieee.org/document/6630333](https://sci-hub.tw/https://ieeexplore.ieee.org/document/6630333)
 * [https://ieeexplore.ieee.org/document/1260818](https://sci-hub.tw/https://ieeexplore.ieee.org/document/1260818)
-
-## References
