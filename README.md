@@ -1,16 +1,17 @@
 
 Method for NLP project
-by M1 Master TAL students
+by M1 Master TAL students:
+
 Esteban Marquer
+
 Kelvin Han
+
 Elena Khasanova
 
+## Project report
+[Report](https://github.com/elenakhas/semantic-mining/blob/master/SemanticMining.Report.pdf)
+
 ## Files
-  * `xml/`: folder where the XML version of the definitions are located
-    * `carrot.xml`: XML of the definition of the noun "carrot", source is 
-    [the article "carrot" of the McMillan Dictionary](https://www.macmillandictionary.com/dictionary/british/carrot)
-    * `sweet_1.xml`: XML of the definition of the adjective "sweet", source is 
-    [the article "sweet_1" of the McMillan Dictionary](https://www.macmillandictionary.com/dictionary/british/sweet_1)
 * `dictionary_scrapping.py`: file containing the functions needed to interact with UD Pipe and the McMillan dictionary; 
 among the interactions, there is: the extraction a definition given its dictionary key (basically the lemma) and the 
 extraction of the correct key/lemma for a given word and a given context; the support for word search should is 
