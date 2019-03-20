@@ -13,8 +13,8 @@ Elena Khasanova
 
 ## Files
 * `dictionary_scrapping.py`: file containing the functions needed to interact with UD Pipe and the McMillan dictionary; 
-among the interactions, there is: the extraction a definition given its dictionary key (basically the lemma) and the 
-extraction of the correct key/lemma for a given word and a given context; the support for word search should is 
+among the interactions, there is: the extraction a definition given its dictionary key (the lemma) and the 
+extraction of the correct key/lemma for a given word and a given context; the support for word search is 
 included, and is used as a backup for unrecognised lemma or words
 * `word_tree.py`: file containing the classes necessary to build a semantic tree: Node, and its children Word and 
 Primitives
@@ -25,11 +25,11 @@ word (linking words to their children)
 * `tree_counter.py`: file containing the functions needed to process some kind of distance between trees based on the
 words present in that tree
 * `draw_heatmap.py`: file containing the functions needed to process the similarity/distance matrices for the different 
-words and adjectives; it also operates as a script to compute those matrices and draw a heatmap (a collored martix) for
+words and adjectives; it also operates as a script to compute those matrices and draw a heatmap (a colored martix) for
 each matrix
 * `run.py`: file containing the functions needed to run a basic tree building process for an explicitly defined word and
 context
-* `large_run.py`: script similar to `run.py` put processing all the words from `noun_contexts.csv` and
+* `large_run.py`: script similar to `run.py` processing all the words from `noun_contexts.csv` and
 `adj_contexts.csv`
 
 * `dictionary_scrapping_test.py`: unit tests for `dictionary_scrapping_test.py`
@@ -51,13 +51,13 @@ The following packages are needed:
 
 ## Usage
 To use the file contained in this repository, you can either use each file individually or use only the intended 
-process. I you wish to use each file individually, there is for most of them a ``if __name__ == '__main__':`` statement
+process. If you wish to use each file individually, there is for most of them a ``if __name__ == '__main__':`` statement
 giving an example of how to use the different processes of the file and what kind of result they give.
 
 ### Intended use
 The intended use is composed of two main steps:
-1. creating and populating a word database, which means creating an oriented semantic graph of as set of 
-interesting words according to their definition in the McMillan dictionary;
+1. creating and populating a word database, which means creating an oriented semantic graph of a set of 
+words you are interestted in according to their definition in the McMillan dictionary;
 2. using the created graph to explore the semantic trees of specific words and comparing them.
 
 #### Fist step: creating and populating a word database
@@ -71,7 +71,7 @@ construction of the graph (last argument `10` in `tree_builder.build_word_tree(w
 You can now run the script and wait for your database to be populated.
 
 The last option is to use a given database, and to add now words to it.
-Do do so, you will need to unpickle a database, run `build_tree(new_word, context_for_the_new_word)` on it, then 
+To do so, you will need to unpickle a database, run `build_tree(new_word, context_for_the_new_word)` on it, then 
 pickling it once again (you can see that process in the ``if __name__ == '__main__':`` statement in `run.py`)
 
 #### Second step: exploring the graph
